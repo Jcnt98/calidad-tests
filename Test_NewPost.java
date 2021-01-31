@@ -26,6 +26,7 @@ public class Test_NewPost {
   }
   
 //PRUEBAS PARA AGREGAR UN NUEVO POST.
+//**Aquí utilizamos la sección de "Just now" para ver si nuestra publicación de verdad se creó inmediatamente**
   @Test
   public void testAgregar() throws Exception {
     driver.get("https://www.jmkleger.com/demo/ajax_crud#");
@@ -42,7 +43,7 @@ public class Test_NewPost {
   }
 
   //PRUEBAS PARA MODIFICAR UNA PUBLICACIÓN.
-  //**Si el contenido intriducido es igual al encontrado en la página despues de presionar el botón de agregar, entonces pasa la prueba**
+  //**Buscamos la notificación del texto actualizado, así que esperamos 5segundos**
   
 	@Test
   public void testModificar() throws Exception {
